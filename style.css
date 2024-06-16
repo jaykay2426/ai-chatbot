@@ -1,0 +1,365 @@
+body{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+
+}
+
+.top-nav-bar{
+    background-color: rgb(133, 63, 199);
+    color: white;
+    padding-top: 0.1px;
+    padding-bottom: 0.1px;
+    text-align: center;
+}
+.top-nav-bar span{
+    text-decoration: underline;
+    color: blue;
+}
+.top-nav-bar span:hover{
+  color: red;
+  background: linear-gradient(black, whitesmoke, purple, blue);
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: black;
+    font-family: cursive;
+  }
+  
+  .navbar img{
+    height:35px;
+    border-radius: 40%;
+  }
+
+  .navbar a {
+    float: left;
+    display: block;
+    font-size: 17px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; 
+    margin: 0;
+  }
+  .dropdown .dropbtn .fa{
+      color: rgb(0, 195, 255);
+  }
+  
+ 
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: black;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .search-box{
+    height: 30px;
+    width: 210px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: blackl;
+    border-radius: 30px;
+    align-items: center;
+    box-shadow: 0 10px 25px green;
+  }
+  .search-box:hover input{
+    width: 200px;
+  }
+  .search-box input{
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    color: white;
+    background: transparent;
+  }
+  .search-box a .fas{
+    color: green;
+    font-size: 22px;
+  }
+ 
+    @media screen and (max-width: 600px) {
+  .topnav a, .topnav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
+}
+
+
+
+.body-part h3{
+    font-size: 90px;
+    color: white;
+    text-align: center;
+    padding-right: 180px;
+    padding-top: 40px;
+    margin-top: 120px;
+}
+
+.body-part .sub-header{
+    color: whitesmoke;
+    font-size: 50px;
+    text-align: center;
+    padding-left: 80px;
+    padding-bottom: 10px;
+}
+.body-part p{
+  color: white;
+  padding-left: 850px;
+}
+.body-part img{
+    width: 100%;
+    height: 970px;
+}
+.body-part .search-container{
+    float: right;
+}
+.body-part input[type=text]{
+padding: 6px;
+margin-top: 8px;
+font-size: 17px;
+border: none;
+}
+.body-part .search-container button{
+    float: right;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: yellow;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+.body-part .search-container button:hover{
+    background: red;
+}
+.issue h3{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    background: linear-gradient(to top, #008aff,#d9ff00, red, green);
+    padding-left: 25px;
+}
+
+.about-me{
+  background-color: red;
+}
+
+.whatsapp{
+  background: linear-gradient(red, green, white, black);
+  font-size: 25px;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+}
+
+.instagram{
+  background: linear-gradient(red, green, white, black);
+  text-align: center;
+}
+.mail{
+  font-size: 23px;
+}
+
+.mail .label{
+  background-color: red;
+}
+.loader{
+  position: relative;
+  width: 100%;
+  height: 15px;
+  background: red;
+}
+.loader::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #008aff;
+  transform-origin: left;
+  animation: animate 8s linear infinite;
+}
+@keyframes animate{
+  0%,20%{
+    transform: scaleX(0);
+  }
+  40%{
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  40.000001%,60%{
+    transform: scaleX(1);
+    transform-origin: right;
+  }
+  80%,100%{
+    transform: scaleX(1);
+    transform-origin: right;
+  }
+}
+.loader::after{
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) scale(0);
+  width: 10px;
+  height: 10px;
+  background: black;
+  border-radius: 50%;
+  animation: animateDot 8s linear infinite;
+}
+@keyframes animateDot{
+  0%{
+    transform: translateY(-50%) scale(0);
+
+  }
+  5%{
+    transform: translateY(-50%) scale(1);
+  }
+  15%,20%{
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+::-webkit-scrollbar{
+    width: 0;
+}
+#scrollPath-left{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 15px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+}
+#pregressbar-left{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 15px;
+    height: 100%;
+    background: linear-gradient(to top, #008aff,#00ffe7);
+    animation: animate 5s linear infinite;
+    z-index: 1;
+}
+
+#pregressbar-right{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 15px;
+  height: 100px;
+  background: linear-gradient(to top, #008aff,#00ffe7);
+  animation: animate 5s linear infinite;
+}
+
+
+
+@keyframes animate{
+    0%,100%
+    {
+        filter: hue-rotate(0deg);
+    }
+    50%
+    {
+        filter: hue-rotate(360deg);
+    }
+}
+#pregressbar-right::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff,#00ffe7);
+    filter: blur(30px);
+}
+#pregressbar-right::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff,#00ffe7);
+    filter: blur(30px);
+}
+
+.project{
+background-color: blue;
+}
